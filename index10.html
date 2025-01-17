@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><!--p.482-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        li {
+            list-style-type: none;
+            /* background-color: rgb(240, 240, 240); */
+            position: relative;
+            border-radius: 100px;
+        }
+
+        li .caption {
+            opacity: 0;
+            position: absolute;
+            top: 0px;
+            background-color: rgba(30, 30, 30, 0.3);
+            width: 180px;
+            height: 190px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        li .caption>div {
+            padding-top: 50px;
+            color: white;
+        }
+        li:hover .caption{
+            opacity: 1;
+        }
+        p{font-size: 20px;}
+    </style>
+</head>
+
+<body>
+    <h1>하얼빈</h1>
+    <div id="container">
+        <ul>
+            <li>
+                <img src="../팀플/메인/하얼빈.png" alt="">
+                <div class="caption">
+                    <div>
+                        <h1>하얼빈</h1>
+                        <h2>예매하기</h2>
+                        <p>CGV</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="../팀플/메인/하얼빈.png" alt="">
+                <div class="caption">
+                    <div>
+                        <h1>하얼빈</h1>
+                        <h2>예매하기</h2>
+                        <p>롯데시네마</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="../팀플/메인/하얼빈.png" alt="">
+                <div class="caption">
+                    <div>
+                        <h1>하얼빈</h1>
+                        <h2>예매하기</h2>
+                        <p>메가박스</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
